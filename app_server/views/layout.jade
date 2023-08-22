@@ -1,0 +1,84 @@
+doctype html
+html
+  head
+    title Weather 
+    link(rel='stylesheet', href='https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css')
+    script(src='https://code.jquery.com/jquery-3.5.1.slim.min.js')
+    script(src='https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js')
+    script(src='https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js')
+    script(src='https://kit.fontawesome.com/a076d05399.js')
+  body
+    nav.navbar.navbar-expand-lg.navbar-dark.bg-dark
+      // ... (navbar code)
+      nav.navbar.navbar-expand-lg.navbar-dark.bg-dark
+      .container
+        .navbar-brand
+          a.logo(href='/') Weather Forecast
+        button.navbar-toggler(type='button', data-toggle='collapse', data-target='#navbarNav', aria-controls='navbarNav', aria-expanded='false', aria-label='Toggle navigation')
+          span.navbar-toggler-icon
+        .collapse.navbar-collapse#navbarNav
+          ul.navbar-nav.ml-auto
+            li.nav-item
+              a.nav-link(href='/') Home
+            li.nav-item
+              a.nav-link(href='/Forecast') Forecast
+            li.nav-item
+              a.nav-link(href='/Articles') Articles
+            
+              a.nav-link(href='/contact') Contact
+          .search-box.navbar-nav
+            form.form-inline.my-2.my-lg-0
+              input.form-control(type='text', placeholder='Search')
+              button.btn.btn-outline-light(type='submit')
+                i.fa.fa-search
+
+    main.container.content
+      h1 Weather App
+      p Explore the latest weather forecasts, articles, and more.
+
+      .row.mt-4
+        // First set of cards
+        .col-md-4
+          .card
+            img.card-img-top(src='https://lh3.googleusercontent.com/7XAWQJWGLzl6SYpZ4wJ9ZrO5txw7YXZ5L0lc4vz4VnZnHS9CMEw2s_I2h9scKW6GyiJpykA08fv47f9vutUQyrRR_gCdSJpFTAyJuSad', alt='Hyderabad Weather')
+            .card-body
+              h5.card-title Hyderabad Weather
+              p.card-text Some description about Hyd weather.
+
+        .col-md-4
+          .card
+            img.card-img-top(src='https://lh3.googleusercontent.com/PEzSHoEj5PeDeKwl2zB1CJWSypeEx6Oy-a2-7zvkeHf2aiWC-JfzprqiqOoLlqcbretn_cTAs1ZhNnrHvmaa5kqRCvygNoyFTGxdWENn', alt='Andhra Pradesh Weather')
+            .card-body
+              h5.card-title Andhra Pradesh Weather
+              p.card-text Some description about AP weather.
+
+        .col-md-4
+          .card
+            img.card-img-top(src='https://lh3.googleusercontent.com/EcWx_SpMZX_ABhbMZjPaaAAshaCvQQq0Mtc0CzZ-AD6KyJDnnxTYFC7a3KD5gFGBaSGZ2xvJKRIPThOR7T_UbyGuDmpV5rtUoMZgFh1aZg', alt='Chennai Weather')
+            .card-body
+              h5.card-title Chennai Weather
+              p.card-text Some description about Chennai weather.
+
+        // Second set of cards
+        .col-md-4
+          .card
+            img.card-img-top(src='https://lh3.googleusercontent.com/Q7PvZMRMfnrprnT4EiYYNC9St1giy4HgNCfnEqnG1nsttxIcwpPebgZiGrPkQ36xJplGiEIV34KNamz5zrJ8oUegtD_HzJv6_jwZ0E_kgg', alt='Bengaluru Weather')
+            .card-body
+              h5.card-title Bengaluru Weather
+              p.card-text Some description about Bengaluru weather.
+
+        .col-md-4
+          .card
+            img.card-img-top(src='https://lh3.googleusercontent.com/QUcUmL3tEZE6aAGvB5DwjYl9HhSLHVzAqKseDIuYNHdVJlcxbVt7moUKECDIT1tyKmcNEgRM_ASjJsqPeY_BE8yy3ZU_a62hTKUZIjLqCg', alt='Delhi Weather')
+            .card-body
+              h5.card-title Delhi Weather
+              p.card-text Some description about Delhi weather.
+
+        .col-md-4
+          .card
+            img.card-img-top(src='https://lh3.googleusercontent.com/AMeo_nANKDPLg7Q_tCXgGOrnAGxKm_6yTds9SvrPtaBulfh_2Pr7m6cSjv_oZCVLbvctrcaeMX1vgVL4JSZb-u1CCgmCuBhRku3dKY_Hdw', alt='Gujarat Weather')
+            .card-body
+              h5.card-title Gujarat Weather
+              p.card-text Some description about China weather.
+
+      

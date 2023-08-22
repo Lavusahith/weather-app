@@ -1,0 +1,66 @@
+doctype html
+html
+  head
+    title Article Page
+    link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css')
+    style
+      | body {
+      |   font-family: Arial, sans-serif;
+      | }
+      | header {
+      |   background-color: #007bff;
+      |   color: white;
+      |   text-align: center;
+      |   padding: 1rem;
+      | }
+      | .container {
+      |   padding: 2rem;
+      | }
+      | .article {
+      |   background-color: #f8f9fa;
+      |   padding: 1rem;
+      |   border-radius: 5px;
+      |   margin-bottom: 1rem;
+      | }
+      | footer {
+      |   background-color: #343a40;
+      |   color: white;
+      |   text-align: center;
+      |   padding: 1rem;
+      | }
+
+  body
+    nav.navbar.navbar-expand-lg.navbar-dark.bg-dark
+      .container
+        a.navbar-brand(href='#') Article Page
+        button.navbar-toggler(type='button', data-toggle='collapse', data-target='#navbarNav', aria-controls='navbarNav', aria-expanded='false', aria-label='Toggle navigation')
+          span.navbar-toggler-icon
+        #navbarNav.collapse.navbar-collapse
+          ul.navbar-nav.ml-auto
+            li.nav-item.active
+              a.nav-link(href='/') Home
+            li.nav-item
+              a.nav-link(href='#') Articles
+            li.nav-item
+              a.nav-link(href='/AboutUs') About
+            li.nav-item
+              a.nav-link(href='/contact') Contact
+
+    header
+      h1 Welcome to Our Article Page
+    .container
+      .article
+        h2 Article Title
+        p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, libero eu bibendum iaculis, justo mauris dignissim ligula, sed luctus lectus justo sit amet nisi.
+        p Fusce a urna eu lectus sollicitudin luctus.
+        p Curabitur maximus, odio ac tincidunt scelerisque, ipsum tortor fringilla odio, sit amet lacinia justo mi vel dolor.
+      .article
+        h2 Another Article Title
+        p Ut porta libero vel tellus blandit sollicitudin. Nam feugiat bibendum urna, sed venenatis velit fringilla non.
+        p Sed id augue eu tellus gravida blandit eu in risus.
+    footer
+      p Copyright © 2023 ArticlePageExample.com
+
+script(src='https://code.jquery.com/jquery-3.5.1.slim.min.js', integrity='sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN', crossorigin='anonymous')
+script(src='https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js', integrity='sha384-pzjw5f+ua7NP4g6HvCt38i6kFX8Gb4AQ7fFZz3l8x2G/KvcUOp6pCtKU6U8fwn6B', crossorigin='anonymous')
+script(src='https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js', integrity='sha384-pzjw5f+ua7NP4g6HvCt38i6kFX8Gb4AQ7fFZz3l8x2G/KvcUOp6pCtKU6U8fwn6B', crossorigin='anonymous')

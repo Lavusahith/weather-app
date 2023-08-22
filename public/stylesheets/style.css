@@ -1,0 +1,52 @@
+/* style.css */
+
+/* Navbar */
+.navbar {
+  background-color: #3498db;
+  color: white;
+  padding: 15px;
+}
+
+.navbar-brand {
+  font-size: 24px;
+}
+
+.logo {
+  text-decoration: none;
+  color: white;
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-item {
+  text-decoration: none;
+  color: white;
+  margin: 0 15px;
+}
+
+.nav-item:hover {
+  text-decoration: underline;
+}
+
+/* Search Box */
+.search-box {
+  display: flex;
+  align-items: center;
+}
+
+.search-box input[type="text"] {
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+}
+
+.search-box i {
+  margin-left: 10px;
+  color: white;
+  cursor: pointer;
+}
